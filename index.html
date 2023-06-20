@@ -7,32 +7,44 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Sound Board</title>
+		<link
+			rel="stylesheet"
+			href="app.css"
+		/>
+		<script
+			src="app.js"
+			defer
+		></script>
 	</head>
 	<body>
 		<main class="main">
-			<sound>
+			<div class="audio-container">
 				<h2>Rainfall Sound</h2>
-				<source
-					src="https://www.fakesoundlibrary.com/rainfall.mp3"
-					type="audio/mpeg"
-				/>
-			</sound>
-
-			<sound>
+				<audio id="rainfall">
+					<source
+						src="./sounds/rain.wav"
+						type="audio/mpeg"
+					/>
+				</audio>
+			</div>
+			<div class="audio-container">
 				<h2>Epic Battle Music</h2>
-				<source
-					src="https://www.fakeaudiosamples.com/epic-battle-music.wav"
-					type="audio/wav"
-				/>
-			</sound>
-
-			<sound>
+				<audio id="epic">
+					<source
+						src="./sounds/epic-battle.mp3"
+						type="audio/wav"
+					/>
+				</audio>
+			</div>
+			<div class="audio-container">
 				<h2>Ocean Waves</h2>
-				<source
-					src="https://www.fakesoundbank.net/ocean-waves.ogg"
-					type="audio/ogg"
-				/>
-			</sound>
+				<audio id="ocean">
+					<source
+						src="./sounds/ocean-waves.mp3"
+						type="audio/ogg"
+					/>
+				</audio>
+			</div>
 		</main>
 	</body>
 </html>
